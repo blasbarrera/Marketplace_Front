@@ -16,7 +16,7 @@ import ProductImage2 from '../assets/images/papaya.jpg';
 import ProductImage3 from '../assets/images/fresa.jpg';
 import ProductImage4 from '../assets/images/coco.jpg';
 import ProductImage5 from '../assets/images/mango.jpg';
-import ProductImage6 from '../assets/images/Mora-azul.jpg';
+import ProductImage6 from '../assets/images/Mora-Azul.jpg';
 import ProductImage7 from '../assets/images/aguacate.jpg';
 import ProductImage8 from '../assets/images/hamburguesa.jpg';
 import ProductImage9 from '../assets/images/abanico.jpg';
