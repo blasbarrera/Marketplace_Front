@@ -1,0 +1,12 @@
+/* src/NotFound.css */
+.container {
+    margin-top: 50px;
+  }
+  
+  .error-title {
+    color: #d9534f; /* Bootstrap danger color */
+  }
+  
+  .error-message {
+    color: #333;
+  }

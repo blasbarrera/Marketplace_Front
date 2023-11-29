@@ -1,9 +1,11 @@
 // src/App.jsx
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom';
 import AdminDashboard from './AdminDashboard';
 import UserCatalog from './UserCatalog';
 import CreateArticleForm from './CreateArticleForm';
+import FrontPage from './FrontPage'; 
+import NotFound from './NotFound'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../assets/styles/nav.css';
 
@@ -46,6 +48,9 @@ const App = () => {
           <p>Bienvenido a EasyMarketplace!</p>
           <ul>
             <li>
+              <Link to="/front-page">Pagina Principal</Link>
+            </li>
+            <li>
               <Link to="/admin">Admin</Link>
             </li>
             <li>
@@ -59,8 +64,10 @@ const App = () => {
           <Route path="/admin/*" element={<AdminDashboard products={products} setProducts={setProducts} />} />
           <Route path="/user" element={<UserCatalog products={products} />} />
           <Route path="/admin/create-article" element={<CreateArticleForm setProducts={setProducts} />} />
-          {/* Nueva ruta para la edición */}
           <Route path="/admin/create-article/edit/:productId" element={<CreateArticleForm products={products} setProducts={setProducts} />} />
+          <Route path="/front-page" element={<FrontPage />} />
+          <Route path="*" element={<NotFound />} />
+          <Route path="/" element={<Navigate to="/front-page" />} />
         </Routes>
       </div>
     </Router>

@@ -1,0 +1,18 @@
+/* src/FrontPage.css */
+.container {
+    margin-top: 50px;
+  }
+  
+  .welcome-title {
+    color: #5bc0de; /* Bootstrap info color */
+  }
+  
+  .welcome-message {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-around;
+  }
