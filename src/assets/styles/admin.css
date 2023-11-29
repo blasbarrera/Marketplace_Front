@@ -1,0 +1,128 @@
+/* src/styles/admin.css */
+body {
+  background-color: #111;
+  color: #000;
+  font-family: 'Arial', sans-serif;
+}
+
+.admin-container {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+  color: #333;
+}
+
+.admin-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.admin-buttons a {
+  text-decoration: none;
+}
+
+.admin-buttons button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.admin-buttons button:hover {
+  background-color: #45a049;
+}
+
+.pagination-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-list {
+  list-style: none;
+  padding: 0;
+}
+
+.product-item {
+  border: 1px solid #ddd;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+}
+
+.product-item img {
+  max-width: 100px;
+  height: auto;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.product-info {
+  margin-right: 10px;
+  flex-grow: 1;
+}
+
+.article-btns {
+  display: flex;
+  align-items: center;
+}
+
+.article-btns button {
+  margin-inline-start: 10px;
+}
+
+/* Estilo para los labels del formulario */
+.form-label {
+  color: #333; /* Color del texto */
+  font-size: 1.2em; /* Tamaño de fuente */
+  margin-bottom: 0.5em; /* Espaciado inferior */
+}
+
+/* Estilo para los campos de entrada del formulario */
+.form-input {
+  width: 100%; /* Ancho del campo de entrada al 100% */
+  padding: 0.5em; /* Espaciado interno */
+  margin-bottom: 1em; /* Espaciado inferior */
+  border: 1px solid #ddd; /* Borde del campo */
+  border-radius: 5px; /* Bordes redondeados */
+  box-sizing: border-box; /* Evitar que el borde afecte al tamaño total */
+}
+
+.pagination-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination-buttons button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.pagination-buttons button:hover {
+  background-color: #45a049;
+}
+
+.pagination-buttons .active {
+  background-color: #45a049;
+}
